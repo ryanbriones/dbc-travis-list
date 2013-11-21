@@ -1,4 +1,8 @@
 language: ruby
 before_script:
-  - cp config/database.travis.yml config/database.yml
-  - "bundle exec rake db:setup db:migrate"
+- cp config/database.travis.yml config/database.yml
+- bundle exec rake db:setup db:migrate
+notifications:
+  hipchat:
+    rooms:
+      secure: agSnLkc2uNcrgEpuFf+1ojtgyjJXAJy7BHHPvvbq4rT3mjfZ2hOrSITnr1aOeJrtF842k85Ioqc1FaodZAztN0PTNLEg1ttmq74/3Zm8eYXMMo2KHIPvbFVGyTCsjrf6uDtTMH9y/03yGp9K0RnkWvGwHLPhfesral2bExJeYMc=
