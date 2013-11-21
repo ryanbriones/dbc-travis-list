@@ -29,6 +29,10 @@ Requires:
 
         $ rake spec
 
+Run coverage report locally
+
+        $ bundle exec coveralls report
+
 ## Contact
 
 Ryan Briones <ryan@devbootcamp.com>
