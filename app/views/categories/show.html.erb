@@ -1,1 +1,9 @@
-<h1><%= @category.name %></div>
+<h1><%= @category.name %></h1>
+
+<%= link_to "Create new Post", new_category_post_path(@category) %>
+
+<ul id="posts">
+<% @category.posts.each do |post| %>
+<li><%= post.title%></li>
+<% end %>
+</ul>
